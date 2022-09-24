@@ -26,13 +26,8 @@ module.exports = {
   // add your custom rules here
   rules: {
     "no-console": "off",
-    "react/button-has-type": 0,
-    "react/no-access-state-in-setstate": 0,
-    "react/destructuring-assignment": 0,
-    "react/sort-comp": 0,
     "no-eval": 1,
     "no-const-assign": "warn",
-    "react/no-did-mount-set-state": 0,
     "no-this-before-super": "warn",
     "no-undef": "warn",
     "no-unreachable": "warn",
@@ -55,26 +50,17 @@ module.exports = {
     "no-implicit-globals": "off",
     "no-mixed-operators": "off",
     "no-shadow": "off",
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
-      }
-    ],
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "components": [
-          "Link"
-        ],
-        "specialLink": [
-          "to"
-        ]
-      }
-    ],
+    // "jsx-a11y/anchor-is-valid": [
+    //   "error",
+    //   {
+    //     "components": [
+    //       "Link"
+    //     ],
+    //     "specialLink": [
+    //       "to"
+    //     ]
+    //   }
+    // ],
     "prefer-destructuring": [
       "error",
       {
@@ -91,7 +77,6 @@ module.exports = {
         "enforceForRenamedProperties": false
       }
     ],
-    "react/prefer-stateless-function": "off",
     "no-param-reassign": [
       "error",
       {

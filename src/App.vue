@@ -1,13 +1,14 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <h1 v-for=" message  in (user.data.msg)" v-bind:key="message">{{message}}</h1>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
+  props: ['user'],
 };
 </script>
 
