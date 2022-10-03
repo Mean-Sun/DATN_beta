@@ -40,6 +40,7 @@ module.exports = {
     'no-implicit-globals': 'off',
     'no-mixed-operators': 'off',
     'no-shadow': 'off',
+    'default-param-last': ['off'],
     // "jsx-a11y/anchor-is-valid": [
     //   "error",
     //   {
