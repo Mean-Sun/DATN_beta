@@ -1,17 +1,23 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
-    es6: true,
     browser: true,
+    commonjs: true,
+    es6: true,
+    node: true,
   },
   extends: [
     'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-strongly-recommended',
+    'plugin:vue/vue3-recommended',
     '@vue/airbnb',
     '@vue/typescript/recommended',
   ],
+  plugins: [
+    'vue',
+  ],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaFeatures: 2020,
   },
   rules: {
     'no-console': 'off',
@@ -41,17 +47,6 @@ module.exports = {
     'no-mixed-operators': 'off',
     'no-shadow': 'off',
     'default-param-last': ['off'],
-    // "jsx-a11y/anchor-is-valid": [
-    //   "error",
-    //   {
-    //     "components": [
-    //       "Link"
-    //     ],
-    //     "specialLink": [
-    //       "to"
-    //     ]
-    //   }
-    // ],
     'prefer-destructuring': [
       'error',
       {
@@ -97,5 +92,14 @@ module.exports = {
       // },
     ],
     'import/no-unresolved': ['off'],
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 3,
+      },
+      multiline: {
+        max: 1,
+      },
+    }],
+
   },
 };
